@@ -3,69 +3,71 @@
    <head>
        <title>BurgerHeaven Online</title>
        <meta charset="utf-8"/>
+       <link rel="stylesheet" href="/Users/annavankrieken/Documents/mynewfolder/1MD031-lab-2024/public/css/style.css">
    </head>
-   <body>
+   
+    <body>
     <header>
         <h1>Välkommen till BurgerHeaven!</h1>
     </header>
     <main>
 
-    <section>
+    <section id="BurgerInfo">
     <h2>Vår meny</h2>
        <p>Välj bland våra underbara burgare! </p>
       
-       <div style="display: inline-block">
+       <div class="wrapper">
        <h3>
         Juicy
       </h3>
-      <img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg" alt="Span" style="width: 300px">
+      <img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg" alt="Span">
       <p>
         Vår storsäljare!
       </p>
       <ul>
-        <li>Nästan glutenfri</li>
-        <li>Kött och laktos</li>
+        <li class="Ingredient">Nästan glutenfri</li>
+        <li class="Ingredient">Kött och laktos</li>
         <li>Oerhört god</li>
     </ul>
     </div>
 
-    <div style="display: inline-block">
+    <div class = "wrapper" >
         <h3>
          Datenight
        </h3>
-       <img src="https://media.istockphoto.com/id/1302436326/photo/junk-food-homemade-beef-burgers-on-vintage-wooden-background.jpg?s=612x612&w=0&k=20&c=NsyDE31unoNd80wGfrkMOqvsnjeNOpHER-yL_8KwcRw=" alt="Span" style="width: 300px">
+       <img src="https://media.istockphoto.com/id/1302436326/photo/junk-food-homemade-beef-burgers-on-vintage-wooden-background.jpg?s=612x612&w=0&k=20&c=NsyDE31unoNd80wGfrkMOqvsnjeNOpHER-yL_8KwcRw=" alt="Span">
        <p>
          Perfekt att dela!
        </p>
        <ul>
-         <li>En av dem glutenfri</li>
-         <li>En av dem vegansk</li>
-         <li>2 är bättre än 1</li>
+        <li>En av dem glutenfri</li>
+        <li>En av dem vegansk</li>
+        <li>2 är bättre än 1</li>
      </ul>
      </div>
 
-     <div style="display: inline-block">
+     <div class="wrapper">
         <h3>
          Cheesy
        </h3>
-       <img src="https://www.foodandwine.com/thmb/XE8ubzwObCIgMw7qJ9CsqUZocNM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MSG-Smash-Burger-FT-RECIPE0124-d9682401f3554ef683e24311abdf342b.jpg" alt="Span" style="width: 300px">
+       <img src="https://www.foodandwine.com/thmb/XE8ubzwObCIgMw7qJ9CsqUZocNM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MSG-Smash-Burger-FT-RECIPE0124-d9682401f3554ef683e24311abdf342b.jpg" alt="Span">
        <p>
          Vår ostiga!
        </p>
        <ul>
-         <li>Inte alls glutenfri</li>
-         <li>Kött och massor av laktos</li>
+         <li class="Ingredient">Inte alls glutenfri</li>
+         <li class="Ingredient">Kött och massor av laktos</li>
          <li>Smälter i munnen</li>
      </ul>
      </div>
 
     </section>
 
-    <section>
+    <section id="KundInfo">
     <h2>Kundinformation</h2>
         <p> Fyll i kontaktuppgifter och leveransadress </p>
         <p>
-            <label for="firstname">För- och efternamn</label><br>
+            <label for="firstname">För- och efternamn</label>
             <input type="text" id="firstname" name="fn" required="required" placeholder="Namn">
         </p>
         <p>
@@ -82,7 +84,7 @@
             <input type="int" id="husnummer" name="hn" required="required" placeholder="Nummer">
         </p>
         <p>
-            <label for="betalmetod">Betalmetod</label><be>
+            <label for="betalmetod">Betalmetod</label>
             <select id="betalmetod" name="btl">
                 <option selected="selected">Swish</option>
                 <option>Kortbetalning</option>

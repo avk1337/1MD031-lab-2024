@@ -1,22 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@700&display=swap');
+
+.Ingredient {
+    font-weight: bold;
+}
+
+#KundInfo {
+    background-color: black;
+    color: white;
+}
+
 body {
-    font-size: 12pt;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14pt;
 }
 
 p {
-    color: red;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14pt;
+    color: rgb(229, 14, 233);
+    text-align: center;
 }
 
 h1 {
     font-family: 'Agbalumo';
     font-size: 36pt;
+    color: rgb(229, 14, 233);
+    position: absolute;   
+    text-align: center;       
+}
+
+h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20pt;
+    color: rgb(139, 5, 142);
+    text-decoration: underline;
+    text-align: center;
+}
+h3 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16pt;
+    color: rgb(139, 5, 142);
+    text-decoration: underline;
+    text-align: center;
+}
+ul li {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14pt;
+    color: rgb(139, 5, 142);
 }
 main, header, footer, nav ul {
     max-width: 40rem;
     margin: 0 auto 0 auto;
 }
 main {
-    background-color: bisque;
+    background-color: rgb(254, 238, 255);
+}
+
+button {
+    padding: 10px 20px;         /* Lägger till inre utrymme */
+    margin: 20px 0;             /* Lägger till yttre utrymme  */
+    border-radius: 5px;         /* Rundar hörnen på knappen */
+}
+button:hover {
+    background-color: #f41ecd; /* Ändrar bakgrundsfärgen */
+    cursor: pointer; /* För att visa att knappen är klickbar */
 }
 
 /* nav ul li {
@@ -26,19 +73,47 @@ main {
     margin: 1em;
 } */
 
+section {
+    margin: 20px;   /* 20px avstånd runt hela sektionen (utanför) */
+    padding: 15px;  /* 15px avstånd inuti sektionen (inuti) */
+    border: 1px solid #f41ecd;  /* Tunn kantlinje*/
+}
+
+div {
+    margin: 20px;   /* 20px avstånd runt hela sektionen (utanför) */
+    padding: 15px;  /* 15px avstånd inuti sektionen (inuti) */
+    border: 1px dashed #f41ecd;  /* Tunn kantlinje*/
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;                  /* Avstånd mellan varje div */
+    grid-template-columns: 1fr;      /* En kolumn som tar upp hela bredden */
+    
+}
+
+.wrapper img {
+    width: 100%;  /* Gör bilden lika bred som sin föräldrakontainer */
+    height: auto; /* Bevarar bildens proportioner */
+}
+
 header {
-    background-image: url("../img/polacks.jpg");
+    background-image: url("https://t3.ftcdn.net/jpg/07/13/14/24/360_F_713142423_Rkh3b7Xjc3XrxN6I6buMEo9kTv3uLQiq.jpg");
     background-size: cover;
-    overflow: hidden;
+    background-position: center;
+    display: flex;                /* Aktivera Flexbox på headern */
+    justify-content: center;      /* Centrera horisontellt */
+    align-items: center;          /* Centrera vertikalt */
     width: 100%;
-    height: 200px;
-    opacity: 0.5;
+    height: 200px;                /* Sätt höjd på headern */
+    position: relative;           /* För Flexbox och andra positioneringar */
+    opacity: 0.7;
 }
 
 header h1 {
-    width:40rem;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0;                    /* Ta bort standardmarginaler */
+    text-align: center;           /* Centrerar texten inom rubriken */
+    text-shadow: 3px 3px 5px white, -3px -3px 5px white, 3px -3px 5px white, -3px 3px 5px white;
 }
 
 nav ul {
