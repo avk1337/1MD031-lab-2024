@@ -1,21 +1,28 @@
 [{
-    "name": "Veggie Bliss", 
+    "name": "Juicy", 
+    "imageUrl": "https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg",
     "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "lactose": true, 
+    "gluten": false,
+    "description": "Vår storsäljare!",
+    "prompts": ["Oerhört god", "Nästan laktosfri"]
+
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
+    "name": "Datenight", 
+    "imageUrl": "https://media.istockphoto.com/id/1302436326/photo/junk-food-homemade-beef-burgers-on-vintage-wooden-background.jpg?s=612x612&w=0&k=20&c=NsyDE31unoNd80wGfrkMOqvsnjeNOpHER-yL_8KwcRw=",
+    "kCal": 750, 
     "lactose": false, 
-    "gluten": false
+    "gluten": false,
+    "description": "Perfekt att dela!",
+    "prompts": ["2 är bättre än 1", "Vegansk"]
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Cheesy", 
+    "imageUrl": "https://www.foodandwine.com/thmb/XE8ubzwObCIgMw7qJ9CsqUZocNM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MSG-Smash-Burger-FT-RECIPE0124-d9682401f3554ef683e24311abdf342b.jpg",
+    "kCal": 800, 
+    "lactose": true, 
+    "gluten": true,
+    "description": "Vår ostiga!",
+    "prompts": ["Smälter i munnen", "Massa kött och laktos"]
 }]
