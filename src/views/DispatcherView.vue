@@ -28,9 +28,13 @@
     },
     created: function () {
       socket.on('currentQueue', data =>
-        this.orders = data.orders);
+        this.testReceiveOrders(data));
     },
     methods: {
+      testReceiveOrders: function(data) {
+        console.log(data)
+        this.orders = data.orders
+      },
       clearQueue: function () {
         socket.emit('clearQueue');
       },
@@ -56,7 +60,7 @@
   font-style: italic;
   font-size: 80%;
   }
-  
+
   #dots {
     position: relative;
     margin: 0;

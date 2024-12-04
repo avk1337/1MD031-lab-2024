@@ -121,8 +121,8 @@ export default {
     },
     orderButton: function(){
       socket.emit("addOrder", { orderId: this.getOrderNumber(),
-                                details: { x: event.clientX - 10 - offset.x,
-                                           y: event.clientY - 10 - offset.y, 
+                                details: { x: this.location.x,
+                                           y: this.location.y, 
                                            firstname: this.namn,
                                            email: this.em,
                                            betalmetod: this.btl,
@@ -130,12 +130,13 @@ export default {
                                 orderItems: this.orderedBurgers
                               }
                  );
-    }
-  },
-
-  addToOrder: function (event) {
+    },
+    addToOrder: function (event) {
       this.orderedBurgers[event.name] = event.amount;
     },
+  },
+
+
   };
 </script>
 
@@ -234,7 +235,6 @@ div {
     padding: 15px;  
     border: 1px dashed #f41ecd; 
 }
-
 
 .wrapper {
   display: grid;
